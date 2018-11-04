@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +12,7 @@
         <scene sceneID="Z5w-LN-iSI">
             <objects>
                 <tableViewController id="C3o-IH-cvF" customClass="TableViewController" customModule="TestCollectionView" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Pkt-Ka-zcy">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Pkt-Ka-zcy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -33,33 +32,34 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="299.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YGK-AE-yRJ">
-                                            <rect key="frame" x="0.0" y="10" width="375" height="279.5"/>
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YGK-AE-yRJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="299.5"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wbf-tS-CcC">
                                                 <size key="itemSize" width="50" height="50"/>
                                                 <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                 <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                <inset key="sectionInset" minX="4" minY="4" maxX="4" maxY="4"/>
+                                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                             </collectionViewFlowLayout>
                                             <cells>
                                                 <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="DWx-4D-gcf">
-                                                    <rect key="frame" x="4" y="4" width="50" height="50"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                     </view>
                                                     <color key="backgroundColor" red="0.9192116857" green="0.34864333450000001" blue="0.225319081" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <size key="customSize" width="150" height="150"/>
                                                 </collectionViewCell>
                                             </cells>
                                         </collectionView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="YGK-AE-yRJ" firstAttribute="top" secondItem="XkT-P3-auF" secondAttribute="top" constant="10" id="L8R-yp-cSx"/>
+                                        <constraint firstItem="YGK-AE-yRJ" firstAttribute="top" secondItem="XkT-P3-auF" secondAttribute="top" id="L8R-yp-cSx"/>
                                         <constraint firstAttribute="trailing" secondItem="YGK-AE-yRJ" secondAttribute="trailing" id="cWf-vC-E2g"/>
                                         <constraint firstItem="YGK-AE-yRJ" firstAttribute="leading" secondItem="XkT-P3-auF" secondAttribute="leading" id="xC1-WD-csJ"/>
-                                        <constraint firstAttribute="bottom" secondItem="YGK-AE-yRJ" secondAttribute="bottom" constant="10" id="zqq-hl-Ov4"/>
+                                        <constraint firstAttribute="bottom" secondItem="YGK-AE-yRJ" secondAttribute="bottom" id="zqq-hl-Ov4"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>

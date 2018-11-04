@@ -13,6 +13,8 @@
 		DE8CCA65218C915100B9452B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE8CCA63218C915100B9452B /* LaunchScreen.storyboard */; };
 		DE8CCA6D218C921500B9452B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8CCA6C218C921500B9452B /* TableViewController.swift */; };
 		DE8CCA6F218C9C9B00B9452B /* PhotoLibraryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE8CCA6E218C9C9B00B9452B /* PhotoLibraryCell.swift */; };
+		DE91C169218D9BC700944D30 /* GenerateRandomData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE91C168218D9BC700944D30 /* GenerateRandomData.swift */; };
+		DE91C16B218DA2BF00944D30 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE91C16A218DA2BF00944D30 /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		DE8CCA66218C915100B9452B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE8CCA6C218C921500B9452B /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		DE8CCA6E218C9C9B00B9452B /* PhotoLibraryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryCell.swift; sourceTree = "<group>"; };
+		DE91C168218D9BC700944D30 /* GenerateRandomData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateRandomData.swift; sourceTree = "<group>"; };
+		DE91C16A218DA2BF00944D30 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				DE8CCA66218C915100B9452B /* Info.plist */,
 				DE8CCA6C218C921500B9452B /* TableViewController.swift */,
 				DE8CCA6E218C9C9B00B9452B /* PhotoLibraryCell.swift */,
+				DE91C168218D9BC700944D30 /* GenerateRandomData.swift */,
+				DE91C16A218DA2BF00944D30 /* Constant.swift */,
 			);
 			path = TestCollectionView;
 			sourceTree = "<group>";
@@ -138,9 +144,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE91C169218D9BC700944D30 /* GenerateRandomData.swift in Sources */,
 				DE8CCA6F218C9C9B00B9452B /* PhotoLibraryCell.swift in Sources */,
 				DE8CCA5B218C914F00B9452B /* AppDelegate.swift in Sources */,
 				DE8CCA6D218C921500B9452B /* TableViewController.swift in Sources */,
+				DE91C16B218DA2BF00944D30 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4F55VCB57F;
 				INFOPLIST_FILE = TestCollectionView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,6 +316,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4F55VCB57F;
 				INFOPLIST_FILE = TestCollectionView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
